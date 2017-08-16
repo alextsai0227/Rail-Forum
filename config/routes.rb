@@ -10,5 +10,8 @@ Rails.application.routes.draw do
       get :hot
     end
   end
+  namespace :account do
+    resources :groups
+  end
   root 'groups#index'
 end
